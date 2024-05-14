@@ -72,3 +72,11 @@ function guardarCSV(csvData) {
     saveAs(blob, 'data.csv');
 };
 // --------------------  GUARDAR/SOBREESCRIBIR ARCHIVO --------------------
+
+
+// ------------ ELIMINAR DATOS ------------
+function eliminarDato(row) {
+    const tableBody = document.querySelector('#CsvTable tbody');
+    tableBody.removeChild(row);
+    guardarCSV(obtenerContenidoCSV()); 
+};
