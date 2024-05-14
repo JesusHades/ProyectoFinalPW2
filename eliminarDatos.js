@@ -64,3 +64,11 @@ function obtenerContenidoCSV() {
 
     return csvData;
 };
+
+
+// --------------------  GUARDAR/SOBREESCRIBIR ARCHIVO --------------------
+function guardarCSV(csvData) {
+    const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8' });
+    saveAs(blob, 'data.csv');
+};
+// --------------------  GUARDAR/SOBREESCRIBIR ARCHIVO --------------------
