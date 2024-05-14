@@ -70,3 +70,28 @@ function añadirDatos(nombre, correo, edad) {
     // Guardar el archivo CSV actualizado
     guardarCSV(csvData);
 };
+
+
+document.getElementById('agregarDatosbtn').addEventListener('click', function(event) {
+
+
+    event.preventDefault();
+
+    // Obtener los valores ingresados en el formulario
+    const nombre = document.getElementById('nombre').value;
+    const correo = document.getElementById('correo').value;
+    const edad = document.getElementById('edad').value;
+
+    // Verificar si todos los campos están completos
+    if (nombre && correo && edad) {
+        // Agregar los nuevos datos a la tabla
+        añadirDatos(nombre, correo, edad);
+
+        // Limpiar el formulario después de agregar los datos
+        document.getElementById('AgregarDatosForm').reset();
+    } else {
+        alert('Por favor, complete todos los campos.');
+    }
+
+});
+// --------------------  AÑADIR DATOS --------------------
