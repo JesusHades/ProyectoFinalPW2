@@ -1,0 +1,54 @@
+
+h2{
+    text-align: center;
+    background-color: rgb(6, 168, 232);
+    font-size: 30px;
+    }
+    
+    
+    table{
+        width: 80%;
+        border-collapse: collapse;
+        background-color: #FFFFFF;
+        background-image: linear-gradient(180deg, #FFFFFF 9%, #6284FF 49%, #FF0000 91%);
+        font-size: 20px;
+    
+    }
+    
+    td{
+        border: 1px solid #ddd;
+        text-align: left;
+        padding: 10px;
+    }
+    
+    th{
+        background-color: #f2f2f2;
+        text-align: left;
+        padding: 10px;
+    }
+    
+    
+    a{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #333;
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 30px;
+    
+    }
+    
+    a:hover{
+        background-color: #0c94e9;
+    }
+    
+    input{
+        background-color: #000000;
+        color: rgb(5, 254, 5);
+        margin-top: 20px;
+        font-size: 20px;
+    
+    }
