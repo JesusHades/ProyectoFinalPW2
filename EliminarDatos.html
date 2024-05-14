@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilosEliminar.css">
+    <title>Eliminar Datos</title>
+</head>
+<body>
+    <h2>Eliminar Datos</h2>
+
+    <!-- Tabla para mostrar los datos -->
+    <table id="CsvTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Edad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas de datos se agregarán dinámicamente aquí -->
+        </tbody>
+    </table>
+    <input type="file" class="file" accept=".csv">
+    <a href="./index.html">Menu</a>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+<script src="./eliminarDatos.js"></script>
+</html>
