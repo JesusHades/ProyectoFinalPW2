@@ -1,0 +1,66 @@
+h2{
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.766);
+    font-size: 30px;
+    }
+    
+    table{
+        width: 80%;
+        border-collapse: collapse;
+        font-size: 20px;
+        background-color: #FF2525;
+        background-image: linear-gradient(147deg, #FF2525 5%, #FFE53B 72%);
+                
+    }
+    
+    td{
+        border: 1px solid #ddd;
+        text-align: left;
+        padding: 10px;
+    }
+    
+    th{
+        text-align: left;
+        padding: 10px;
+    }
+    
+    
+    a{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #333;
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 30px;
+    
+    }
+    
+    a:hover{
+        background-color: #0c94e9;
+    }
+    
+    
+    input{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    
+    .file {
+        background-color: #000000;
+        color: rgb(5, 254, 5);
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    button{
+        font-size: 20px;
+    }
+    
+    button:hover{
+        background-color: rgb(255, 0, 0);
+        color: white;
+    }
