@@ -45,3 +45,28 @@ function guardarCSV(csvData) {
     saveAs(blob, 'data.csv');
 };
 // --------------------  GUARDAR/SOBREESCRIBIR ARCHIVO --------------------
+
+
+// --------------------  AÑADIR DATOS --------------------
+function añadirDatos(nombre, correo, edad) {
+    const tableBody = document.querySelector('#CsvTable tbody');
+
+    // Escribir el contenido del CSV con el formato adecuado
+    let csvData = '';
+    tableBody.querySelectorAll('tr').forEach(row => {
+        Array.from(row.querySelectorAll('td')).forEach((td, index) => {
+            csvData += td.textContent;
+            if (index !== row.cells.length - 1) {
+                csvData += ','; // Agregar coma solo si no es la última celda de la fila
+            }
+        });
+        csvData += '\n'; // Agregar salto de línea al final de cada fila
+    });
+
+    // Agregar los nuevos datos al contenido del CSV
+    const nuevoDato = `${nombre},${correo},${edad}`;
+    csvData += nuevoDato;
+
+    // Guardar el archivo CSV actualizado
+    guardarCSV(csvData);
+};
