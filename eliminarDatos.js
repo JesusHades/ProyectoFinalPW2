@@ -44,3 +44,23 @@ document.querySelector('input[type ="file"]').addEventListener('change', functio
     readCSV(file);
 }); 
 // --------------------  LEER ARCHIVO --------------------
+
+
+function obtenerContenidoCSV() {
+    const tableBody = document.querySelector('#CsvTable tbody');
+    let csvData = '';
+
+    tableBody.querySelectorAll('tr').forEach(row => {
+        if (row.textContent.trim() !== ''){
+        Array.from(row.querySelectorAll('td')).forEach((td, index) => {
+            csvData += td.textContent;
+            if (index !== row.cells.length - 1) {
+                csvData += ',';
+            }
+        });
+        csvData += '\n';
+       }
+    });
+
+    return csvData;
+};
