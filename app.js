@@ -37,3 +37,11 @@ document.querySelector('input[type ="file"]').addEventListener('change', functio
     readCSV(file);
 }); 
 // --------------------  LEER ARCHIVO --------------------
+
+
+// --------------------  GUARDAR/SOBREESCRIBIR ARCHIVO --------------------
+function guardarCSV(csvData) {
+    const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8' });
+    saveAs(blob, 'data.csv');
+};
+// --------------------  GUARDAR/SOBREESCRIBIR ARCHIVO --------------------
