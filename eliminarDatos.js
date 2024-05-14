@@ -80,3 +80,13 @@ function eliminarDato(row) {
     tableBody.removeChild(row);
     guardarCSV(obtenerContenidoCSV()); 
 };
+
+
+document.querySelectorAll('.eliminarDatoBtn').forEach(button => {
+    button.addEventListener('click', function() {
+        const row = this.parentElement.parentElement;
+        eliminarDato(row);
+        
+    });
+});
+// ------------ ELIMINAR DATOS ------------
